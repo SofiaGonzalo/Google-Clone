@@ -1,6 +1,11 @@
-* { /* Añade estilos a todo el proyecto*/
+* { 
     margin: 0;
     padding: 0;
+}
+
+a { /* Etiqueta ancla */
+    text-decoration: none; /* Elimina las decoraciones (__) */
+    cursor: pointer;
 }
 
 body {
@@ -17,5 +22,19 @@ header {
 
 header nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Manda los elementos hasta el final */
+}
+
+header nav .nav-right-section { /* Elementos dentro de la clase, dentro del nav, dentro del header */
+    width: 250px;
+    height: auto ;/* La altura la toma de su elemento padre (header), osea 60px */
+    display: flex;
+    list-style: none; /* Elimina los bullets de la lista */
+    justify-content: center; /* Ordena los elementos de forma horizontal en el centro */
+    align-items: center;
+}
+
+nav .nav-right-section a{
+    margin-right: 10px; /* Separa los elementos del header */
+    color: #000000
 }
