@@ -3,8 +3,8 @@
     padding: 0;
 }
 
-a { /* Etiqueta ancla */
-    text-decoration: none; /* Elimina las decoraciones (__) */
+a { 
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -22,19 +22,33 @@ header {
 
 header nav {
     display: flex;
-    justify-content: flex-end; /* Manda los elementos hasta el final */
+    justify-content: flex-end; 
 }
 
-header nav .nav-right-section { /* Elementos dentro de la clase, dentro del nav, dentro del header */
+header nav .nav-right-section { 
     width: 250px;
-    height: auto ;/* La altura la toma de su elemento padre (header), osea 60px */
+    height: auto ;
     display: flex;
-    list-style: none; /* Elimina los bullets de la lista */
-    justify-content: center; /* Ordena los elementos de forma horizontal en el centro */
+    list-style: none; 
+    justify-content: center; 
     align-items: center;
 }
 
 nav .nav-right-section a{
-    margin-right: 10px; /* Separa los elementos del header */
+    margin-right: 10px; 
     color: #000000
+}
+
+nav .nav-right-section .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png'); /* url es la propiedad de background image */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center;
+    background-size: contain; /* Aproxima al tamaño del contenedor */
+    width: 25px;
+    height: 25px;
+}
+
+nav .nav-right-section img {
+    border-radius: 50px;
+    margin-left: 10px;
 }
