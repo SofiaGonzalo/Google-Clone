@@ -55,10 +55,8 @@ nav .nav-right-section img {
 
 main {
     margin-top: 150px;
-    text-align: center; /* Centra todo lo que este dentro de la etiqueta main */ 
+    text-align: center;  
 }
-
-/* Sección del logo */
 
 main .main-logo {
     width: 530px;
@@ -68,4 +66,26 @@ main .main-logo {
 
 main .main-logo img {
     width: 300px;
+}
+
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container {
+    width: 525px;
+    border-radius: 100px; /* Elimina la rigidez de los border */
+    border: 1px solid #dfe1e5; /* Borde del buscador */
+    display: flex; /* Coloca los 3 elementos de forma lineal */
+    justify-content: center;
+    align-items: center; /* Determina el espacio entre líneas */
+}
+
+main .main-input input { /* Estilos del input */
+    width: 450px;
+    height: 40px;
+    border: none; /* Elimina el borde (estilo) */
+    outline: none;
 }
