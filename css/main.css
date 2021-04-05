@@ -76,16 +76,42 @@ main .main-input {
 
 main .main-input-container {
     width: 525px;
-    border-radius: 100px; /* Elimina la rigidez de los border */
-    border: 1px solid #dfe1e5; /* Borde del buscador */
-    display: flex; /* Coloca los 3 elementos de forma lineal */
+    border-radius: 100px; 
+    border: 1px solid #dfe1e5; 
+    display: flex; 
     justify-content: center;
-    align-items: center; /* Determina el espacio entre líneas */
+    align-items: center; 
 }
 
-main .main-input input { /* Estilos del input */
+main .main-input input { 
     width: 450px;
     height: 40px;
-    border: none; /* Elimina el borde (estilo) */
+    border: none; 
     outline: none;
+}
+
+main .main-input-container:hover { /* Accede al contenedor del input. Los dos puntos (:) se accede a un efecto de estilo */
+    box-shadow: 0 1px 6px 0 #20212447; /* Añade este estilo al hacer hover sobre el input */
+    border-color: #dfe1e500;
+}
+
+/*Íconos*/
+
+main .main-input .search-icon {
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain; /*Mantiene el tamaño del ícono de acuerdo al tamaño del contenedor*/
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .micro-icon {
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain; 
+    width: 18px;
+    height: 18px;
+    cursor: pointer; /*Cambia la forma del cursor*/
 }
