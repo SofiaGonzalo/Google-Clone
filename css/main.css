@@ -141,3 +141,37 @@ main .main-buttons button:hover{
     box-shadow: 0 1px  #000001;
     color: #000000;
 }
+
+footer {
+    width: 100%; /*Para que abarque todo el ancho de la página*/
+    height: 50px;
+    position: absolute; /*Mantiene el footer hasta abajo de la página*/
+    bottom: 0; /*Mantiene el footer hasta abajo de la página*/
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Propiedad de grid que son el template de las columnas que hará el grid, lo dividimos en 2 fracciones (1fr)*/ 
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left {
+    justify-self: left; /*Mueve todo el contenido a la izquierda*/
+}
+
+footer .footer-right {
+    justify-self: right; /*Mueve todo el contenido a la derecha*/
+}
+
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+    
+}
